@@ -1,6 +1,6 @@
 import React from 'react';
 import { Handle, Position } from '@xyflow/react';
-import Icon from '../../../assets/build.png';
+import Icon from '../../../assets/blockicons/build.png';
 
 const CustomNode = ({ data }) => {
   return (
@@ -12,7 +12,7 @@ const CustomNode = ({ data }) => {
         <div className='text-white font-bold'>
           /ban vez
         </div>
-        <div className='text-grey font-semibold text-xs'>
+        <div className='text-lightgrey font-semibold text-xs'>
           <p> Drag and drop different <span className='text-purple'>options</span>, <span className='text-blue'>actions </span> 
           and <span className='text-green'> conditions</span> to add them to your command. Connect the corresponding colors to create your command.
           </p>

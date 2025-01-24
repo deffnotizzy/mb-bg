@@ -8,10 +8,14 @@ import {
 } from '@xyflow/react';
 
 import '@xyflow/react/dist/base.css';
-import CustomNode from './blocks/base';
+    import CustomNode from './blocks/base';
+    import SendEdit from './blocks/sendedit';
+    import PlainText from './blocks/plain';
 
 const nodeTypes = {
   custom: CustomNode,
+  sendedit: SendEdit,
+  plain: PlainText,
 };
 
 const initialNodes = [
@@ -19,6 +23,16 @@ const initialNodes = [
     id: '1',
     type: 'custom',
     position: { x: 0, y: 0 },
+  },
+  {
+    id: '2',
+    type: 'sendedit',
+    position: { x: 200, y: 150 },
+  },
+  {
+    id: '3',
+    type: 'plain',
+    position: { x: -200, y: 200 },
   },
 ];
 
